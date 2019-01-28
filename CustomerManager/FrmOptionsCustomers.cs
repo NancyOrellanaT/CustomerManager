@@ -22,5 +22,11 @@ namespace CustomerManager
             FrmRegister frmRegister = new FrmRegister();
             frmRegister.Show();
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            FrmSearch frmSearch = new FrmSearch();
+            frmSearch.Show();
+        }
     }
 }

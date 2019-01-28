@@ -24,8 +24,7 @@ namespace CustomerManager
             {
                 FrmOptionsCustomers frmOptionsCustomers = new FrmOptionsCustomers();
                 frmOptionsCustomers.Show();
-                
-
+               
             }
         }
     }
