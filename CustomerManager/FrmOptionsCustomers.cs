@@ -16,5 +16,11 @@ namespace CustomerManager
         {
             InitializeComponent();
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            FrmRegister frmRegister = new FrmRegister();
+            frmRegister.Show();
+        }
     }
 }
