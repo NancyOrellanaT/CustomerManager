@@ -10,11 +10,23 @@ using System.Windows.Forms;
 
 namespace CustomerManager
 {
-    public partial class frmLogin : Form
+    public partial class FrmLogin : Form
     {
-        public frmLogin()
+        public FrmLogin()
         {
             InitializeComponent();
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            //(txtUser.Text == "Mi chanchi" && txtPassword.Text == "teamo")
+            if (txtUser.Text == "" && txtPassword.Text == "")
+            {
+                FrmOptionsCustomers frmOptionsCustomers = new FrmOptionsCustomers();
+                frmOptionsCustomers.Show();
+                
+
+            }
         }
     }
 }
