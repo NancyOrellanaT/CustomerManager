@@ -103,7 +103,7 @@
             // 
             // btnCallToday
             // 
-            this.btnCallToday.BackColor = System.Drawing.Color.Transparent;
+            this.btnCallToday.BackColor = System.Drawing.Color.White;
             this.btnCallToday.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCallToday.Location = new System.Drawing.Point(40, 474);
             this.btnCallToday.Name = "btnCallToday";
@@ -114,7 +114,7 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearch.BackColor = System.Drawing.Color.White;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.Location = new System.Drawing.Point(40, 390);
             this.btnSearch.Name = "btnSearch";
@@ -126,7 +126,7 @@
             // 
             // btnList
             // 
-            this.btnList.BackColor = System.Drawing.Color.Transparent;
+            this.btnList.BackColor = System.Drawing.Color.White;
             this.btnList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnList.Location = new System.Drawing.Point(40, 303);
             this.btnList.Name = "btnList";
@@ -134,10 +134,11 @@
             this.btnList.TabIndex = 2;
             this.btnList.Text = "List";
             this.btnList.UseVisualStyleBackColor = false;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
             // btnUpdate
             // 
-            this.btnUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.btnUpdate.BackColor = System.Drawing.Color.White;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.Location = new System.Drawing.Point(40, 216);
             this.btnUpdate.Name = "btnUpdate";
@@ -148,7 +149,7 @@
             // 
             // btnRegister
             // 
-            this.btnRegister.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegister.BackColor = System.Drawing.Color.White;
             this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.Location = new System.Drawing.Point(40, 126);
             this.btnRegister.Name = "btnRegister";
@@ -172,14 +173,12 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(29, 24);
+            this.dataGridView1.Location = new System.Drawing.Point(17, 13);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(754, 679);
+            this.dataGridView1.Size = new System.Drawing.Size(776, 702);
             this.dataGridView1.TabIndex = 0;
             // 
             // FrmOptionsCustomers
@@ -212,9 +211,9 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnList;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

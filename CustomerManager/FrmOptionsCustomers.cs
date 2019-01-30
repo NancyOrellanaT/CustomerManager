@@ -28,5 +28,11 @@ namespace CustomerManager
             FrmSearch frmSearch = new FrmSearch();
             frmSearch.Show();
         }
+
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            CustomerControl customerControl = new CustomerControl();
+            dataGridView1.DataSource = customerControl.ListCustomers();
+        }
     }
 }
