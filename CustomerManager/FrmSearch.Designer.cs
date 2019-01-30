@@ -48,7 +48,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(337, 33);
+            this.label1.Location = new System.Drawing.Point(382, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(472, 24);
             this.label1.TabIndex = 0;
@@ -57,7 +57,7 @@
             // lastName_tb
             // 
             this.lastName_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lastName_tb.Location = new System.Drawing.Point(416, 82);
+            this.lastName_tb.Location = new System.Drawing.Point(461, 85);
             this.lastName_tb.Name = "lastName_tb";
             this.lastName_tb.Size = new System.Drawing.Size(327, 28);
             this.lastName_tb.TabIndex = 1;
@@ -65,7 +65,7 @@
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(478, 132);
+            this.btnSearch.Location = new System.Drawing.Point(523, 135);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(213, 34);
             this.btnSearch.TabIndex = 2;
@@ -79,7 +79,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(33, 64);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1095, 344);
+            this.dataGridView1.Size = new System.Drawing.Size(1260, 344);
             this.dataGridView1.TabIndex = 0;
             // 
             // label2
@@ -102,7 +102,7 @@
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Location = new System.Drawing.Point(-3, 216);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1154, 476);
+            this.panel1.Size = new System.Drawing.Size(1350, 476);
             this.panel1.TabIndex = 3;
             // 
             // label6
@@ -113,7 +113,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 4.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(537, 455);
+            this.label6.Location = new System.Drawing.Point(601, 455);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(101, 12);
             this.label6.TabIndex = 21;
@@ -125,7 +125,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(567, 425);
+            this.pictureBox2.Location = new System.Drawing.Point(631, 425);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(38, 27);
             this.pictureBox2.TabIndex = 20;
@@ -135,7 +135,7 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(926, 33);
+            this.pictureBox1.Location = new System.Drawing.Point(971, 36);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(173, 159);
             this.pictureBox1.TabIndex = 4;
@@ -145,7 +145,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1150, 691);
+            this.ClientSize = new System.Drawing.Size(1332, 691);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSearch);

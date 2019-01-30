@@ -70,5 +70,26 @@ namespace CustomerManager
             }
            
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count == 1)
+            {
+                DialogResult answer = MessageBox.Show("Are you sure delete data?", "important", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                if (answer == DialogResult.OK)
+                {
+                    CustomerControl customerControl = new CustomerControl();
+
+                    int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+
+                    customerControl.DeleteCustomer(id);
+                }      
+                    
+            }
+            else
+            {
+                MessageBox.Show("You must select a row to delete customer data","Error!");
+            }
+        }
     }
 }
