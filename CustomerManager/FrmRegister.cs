@@ -29,6 +29,14 @@ namespace CustomerManager
 
             CustomerControl customerControl = new CustomerControl();
             customerControl.InsertCustomer(new Customer(firstName,lastName,email,phone,notes,currentCallDate,callBack));
+
+            MessageBox.Show("Successful registeres customer", "Successfull regitration!");
+            first_name_tb.Text = "";
+            last_name_tb.Text = "";
+            email_tb.Text = "";
+            phone_tb.Text = "";
+            notes_tb.Text = "";
+
         }
     }
 }

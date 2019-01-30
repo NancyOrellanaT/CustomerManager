@@ -46,5 +46,19 @@ namespace CustomerManager
             CustomerControl customerControl = new CustomerControl();
             dataGridView1.DataSource = customerControl.ListCustomers();
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count == 1)
+            {
+                FrmEdit frmEdit = new FrmEdit();
+                frmEdit.Show();
+            }
+            else
+            {
+                MessageBox.Show("You must select a row to edit customer data","Error!");
+            }
+           
+        }
     }
 }
