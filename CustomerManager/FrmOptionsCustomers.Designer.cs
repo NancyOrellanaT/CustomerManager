@@ -85,9 +85,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(144, 42);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 25);
+            this.label2.Size = new System.Drawing.Size(66, 25);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Options";
+            this.label2.Text = "Menu";
             // 
             // label1
             // 
