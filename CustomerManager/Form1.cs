@@ -16,6 +16,7 @@ namespace CustomerManager
         public FrmLogin()
         {
             InitializeComponent();
+            FormBorderStyle = FormBorderStyle.None;
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -30,6 +31,8 @@ namespace CustomerManager
             if (txtUser.Text == "" && txtPassword.Text == "")
             {
                 var handle = GetConsoleWindow();
+
+                Console.WriteLine("Hola chicos");
 
                 ShowWindow(handle, SW_SHOW);
 
