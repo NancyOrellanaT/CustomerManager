@@ -45,7 +45,6 @@
             this.first_name_tb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -146,13 +145,16 @@
             // 
             // edit_button
             // 
+            this.edit_button.BackColor = System.Drawing.Color.White;
+            this.edit_button.FlatAppearance.BorderSize = 0;
+            this.edit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.edit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.edit_button.Location = new System.Drawing.Point(271, 567);
             this.edit_button.Name = "edit_button";
             this.edit_button.Size = new System.Drawing.Size(324, 41);
             this.edit_button.TabIndex = 23;
             this.edit_button.Text = "Edit";
-            this.edit_button.UseVisualStyleBackColor = true;
+            this.edit_button.UseVisualStyleBackColor = false;
             this.edit_button.Click += new System.EventHandler(this.edit_button_Click);
             // 
             // last_name_tb
@@ -204,20 +206,6 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Edit client data";
             // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 4.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(384, 664);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(101, 12);
-            this.label6.TabIndex = 35;
-            this.label6.Text = "Customer Manager";
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -236,7 +224,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(116)))), ((int)(((byte)(166)))));
             this.ClientSize = new System.Drawing.Size(872, 701);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.call_back_date);
             this.Controls.Add(this.current_date);
@@ -283,7 +270,6 @@
         private System.Windows.Forms.TextBox first_name_tb;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
