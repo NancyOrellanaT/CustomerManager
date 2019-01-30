@@ -16,5 +16,19 @@ namespace CustomerManager
         {
             InitializeComponent();
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (lastName_tb.Text != "")
+            {
+                CustomerControl customerControl = new CustomerControl();
+                dataGridView1.DataSource = customerControl.SearchCustomer(lastName_tb.Text);
+            }
+            else
+            {
+                MessageBox.Show("Must enter last name", "Error");
+            }
+            
+        }
     }
 }

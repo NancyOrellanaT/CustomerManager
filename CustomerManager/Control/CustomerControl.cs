@@ -60,16 +60,16 @@ namespace CustomerManager
             return null;
         }
 
-        public DataTable SearchCustomer(int idCustomer)
+        public DataTable SearchCustomer(string lastName)
         {
             try
             {
-                string sql = "SELECT * FROM CUSTOMER WHERE id = " + idCustomer;
+                string sql = "SELECT * FROM CUSTOMER WHERE lastName = '" + lastName + "'";
                 return connection.QuerySQL(sql);
             }
             catch (Exception e)
             {
-                MessageBox.Show("Can't edit the customer's data");
+                MessageBox.Show("Can't search the customer's data");
                 Log.Print(e.ToString());
             }
 
@@ -79,6 +79,12 @@ namespace CustomerManager
         public void EditCustomer(Customer customer)
         {
             string sql = "UPDATE CUSTOMER SET firstName = '" + customer.FirstName + "', lastName = '" + customer.LastName + "', email = '" + customer.Email + "', phone = '" + customer.Phone + "', notes = '" + customer.Notes + "', currentCallDate = '" + customer.CurrentCallDate.ToString("s") + "', callBack = '" + customer.CallBack.ToString("s") + "' WHERE id = " + customer.ID + ";";
+            connection.ExecuteSQL(sql);
+        }
+
+        public void DeleteCustomer(int id)
+        {
+            string sql = "DELETE FROM CUSTOMER WHERE id = " + id;
             connection.ExecuteSQL(sql);
         }
     }
