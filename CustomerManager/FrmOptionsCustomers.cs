@@ -51,8 +51,18 @@ namespace CustomerManager
         {
             if (dataGridView1.SelectedRows.Count == 1)
             {
+                int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+                string firstName = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                string lastName = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                string email = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                string phone = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+                string notes = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+                DateTime currentDate = Convert.ToDateTime(dataGridView1.CurrentRow.Cells[6].Value);
+                DateTime callBack = Convert.ToDateTime(dataGridView1.CurrentRow.Cells[7].Value.ToString());
+
                 FrmEdit frmEdit = new FrmEdit();
-                frmEdit.Show();
+                frmEdit.Show();     
+                frmEdit.LoadData(new Customer(id, firstName, lastName, email, phone, notes, currentDate, callBack));
             }
             else
             {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CustomerManager
 {
-    class Customer
+    public class Customer
     {
         public int ID { get; set; }
         public string FirstName { get; set; }
@@ -39,6 +39,8 @@ namespace CustomerManager
             CurrentCallDate = currentCallDate;
             CallBack = callBack;
         }
+
+        public Customer() { }
 
     }
 }

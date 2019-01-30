@@ -39,7 +39,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.email_tb = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.register_button = new System.Windows.Forms.Button();
+            this.edit_button = new System.Windows.Forms.Button();
             this.last_name_tb = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.first_name_tb = new System.Windows.Forms.TextBox();
@@ -141,15 +141,16 @@
             this.label4.TabIndex = 24;
             this.label4.Text = "Email:";
             // 
-            // register_button
+            // edit_button
             // 
-            this.register_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.register_button.Location = new System.Drawing.Point(274, 590);
-            this.register_button.Name = "register_button";
-            this.register_button.Size = new System.Drawing.Size(324, 41);
-            this.register_button.TabIndex = 23;
-            this.register_button.Text = "Edit";
-            this.register_button.UseVisualStyleBackColor = true;
+            this.edit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.edit_button.Location = new System.Drawing.Point(274, 590);
+            this.edit_button.Name = "edit_button";
+            this.edit_button.Size = new System.Drawing.Size(324, 41);
+            this.edit_button.TabIndex = 23;
+            this.edit_button.Text = "Edit";
+            this.edit_button.UseVisualStyleBackColor = true;
+            this.edit_button.Click += new System.EventHandler(this.edit_button_Click);
             // 
             // last_name_tb
             // 
@@ -216,7 +217,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.email_tb);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.register_button);
+            this.Controls.Add(this.edit_button);
             this.Controls.Add(this.last_name_tb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.first_name_tb);
@@ -244,7 +245,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox email_tb;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button register_button;
+        private System.Windows.Forms.Button edit_button;
         private System.Windows.Forms.TextBox last_name_tb;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox first_name_tb;

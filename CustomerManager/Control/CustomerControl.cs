@@ -60,5 +60,26 @@ namespace CustomerManager
             return null;
         }
 
+        public DataTable SearchCustomer(int idCustomer)
+        {
+            try
+            {
+                string sql = "SELECT * FROM CUSTOMER WHERE id = " + idCustomer;
+                return connection.QuerySQL(sql);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Can't edit the customer's data");
+                Log.Print(e.ToString());
+            }
+
+            return null;
+        }
+
+        public void EditCustomer(Customer customer)
+        {
+            string sql = "UPDATE CUSTOMER SET firstName = '" + customer.FirstName + "', lastName = '" + customer.LastName + "', email = '" + customer.Email + "', phone = '" + customer.Phone + "', notes = '" + customer.Notes + "', currentCallDate = '" + customer.CurrentCallDate.ToString("s") + "', callBack = '" + customer.CallBack.ToString("s") + "' WHERE id = " + customer.ID + ";";
+            connection.ExecuteSQL(sql);
+        }
     }
 }
