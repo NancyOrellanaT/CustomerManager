@@ -91,7 +91,7 @@
             // 
             // btnStart
             // 
-            this.btnStart.BackColor = System.Drawing.Color.Chartreuse;
+            this.btnStart.BackColor = System.Drawing.SystemColors.Control;
             this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStart.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnStart.Location = new System.Drawing.Point(143, 349);
