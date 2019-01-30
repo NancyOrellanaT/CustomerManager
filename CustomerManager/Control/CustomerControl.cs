@@ -43,5 +43,22 @@ namespace CustomerManager
             return null;
         }
 
+        public DataTable ListCustomersToCallToday()
+        {
+            try
+            {
+                string sql = "SELECT * FROM CUSTOMER WHERE CAST(callBack as date) = CAST(getdate() as date)";
+
+                return connection.QuerySQL(sql);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Can't list customers");
+                Log.Print(e.ToString());
+            }
+
+            return null;
+        }
+
     }
 }

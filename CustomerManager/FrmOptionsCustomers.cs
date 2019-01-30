@@ -34,5 +34,17 @@ namespace CustomerManager
             CustomerControl customerControl = new CustomerControl();
             dataGridView1.DataSource = customerControl.ListCustomers();
         }
+
+        private void btnCallToday_Click(object sender, EventArgs e)
+        {
+            CustomerControl customerControl = new CustomerControl();
+            dataGridView1.DataSource = customerControl.ListCustomersToCallToday();
+        }
+
+        private void FrmOptionsCustomers_Load(object sender, EventArgs e)
+        {
+            CustomerControl customerControl = new CustomerControl();
+            dataGridView1.DataSource = customerControl.ListCustomers();
+        }
     }
 }

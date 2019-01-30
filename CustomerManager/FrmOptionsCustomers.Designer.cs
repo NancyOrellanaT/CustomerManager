@@ -111,6 +111,7 @@
             this.btnCallToday.TabIndex = 4;
             this.btnCallToday.Text = "Call today";
             this.btnCallToday.UseVisualStyleBackColor = false;
+            this.btnCallToday.Click += new System.EventHandler(this.btnCallToday_Click);
             // 
             // btnSearch
             // 
@@ -193,6 +194,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Custom Manager";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmOptionsCustomers_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
